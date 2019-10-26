@@ -1,0 +1,5 @@
+/* Make all font-sizes responsive */
+/* Use rem to set sizes */
+html {
+  font-size: 2vw;
+}
