@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import theme from "../../theme";
 
 // root container for the application
 export default styled.div`
@@ -7,7 +8,5 @@ export default styled.div`
   display: flex;
   flex-direction: column;
   font-size: 1.6rem;
-  a:hover {
-    text-decoration: none;
-  }
+  background: ${theme.gs0};
 `;

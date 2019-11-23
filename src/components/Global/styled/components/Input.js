@@ -1,4 +1,6 @@
 import styled from "styled-components";
-import { Input as BS_Input } from "reactstrap";
 
-export default styled(BS_Input)``;
+export default styled.input`
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+`;

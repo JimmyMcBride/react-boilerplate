@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const Form = styled.form`
+const FlexBox = styled.div`
   display: flex;
-  flex-direction: ${props => (props.direction ? props.direction : "column")};
+  flex-direction: ${props => (props.direction ? props.direction : "row")};
   flex-wrap: ${props => (props.wrap ? props.wrap : "nowrap")};
   justify-content: ${props => (props.justify ? props.justify : "flex-start")};
   align-items: ${props => (props.align ? props.align : "stretch")};
@@ -12,9 +12,9 @@ const Form = styled.form`
   background: ${props => (props.background ? props.background : "none")};
 `;
 
-export default Form;
+export default FlexBox;
 
-Form.propTypes = {
+FlexBox.propTypes = {
   // CUSTOM PROPTYPES
   direction: PropTypes.oneOf([
     "row",
