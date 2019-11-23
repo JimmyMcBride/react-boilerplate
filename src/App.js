@@ -4,11 +4,11 @@ import React from "react";
 import { Route } from "react-router-dom";
 
 // Using custom styled components from Global folder in components
-import { AppWrapper } from "./components/Global/globalStyles";
+import { AppWrapper } from "./components/Global/styled";
 
 // Importing all routes
-import HomePage from "./components/HomePage/HomePage";
-import ReduxCounter from "./components/ReduxCounter/ReduxCounter";
+import HomePage from "./components/HomePage";
+import ReduxCounter from "./components/ReduxCounter";
 
 const App = () => {
   return (

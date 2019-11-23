@@ -23,7 +23,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 
 // Import reducer/index.js as root reducer, it's where we're combining all our reducer files
-import rootReducer from "./reducers";
+import rootReducer from "./store/reducers";
 import thunk from "redux-thunk";
 import logger from "redux-logger";
 
