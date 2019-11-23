@@ -8,10 +8,6 @@ import "./index.css";
 // Normalizes our css among different browsers
 import "normalize.css";
 
-// Must install bootstrap and import this css file to use Reactstrap components
-// Also gives a nice basic style overhaul to a lot of default elements
-import "bootstrap/dist/css/bootstrap.min.css";
-
 import App from "./App";
 
 // Keep this puppy here for later
