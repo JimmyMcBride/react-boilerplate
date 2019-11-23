@@ -13,8 +13,8 @@ import ReduxCounter from "./components/ReduxCounter";
 const App = () => {
   return (
     <AppWrapper>
-      <Route path="/" exact component={HomePage} />
-      <Route path="/counter" component={ReduxCounter} />
+      <Route path="/" exact render={props => <HomePage {...props} />} />
+      <Route path="/counter" render={props => <ReduxCounter {...props} />} />
     </AppWrapper>
   );
 };
