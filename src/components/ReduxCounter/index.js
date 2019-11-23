@@ -52,7 +52,6 @@ const CodeCount = styled.div`
 `;
 
 const CountBtn = styled(Button)`
-  background: none;
   width: 3.2rem;
   &:hover {
     font-weight: bold;

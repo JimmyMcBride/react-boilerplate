@@ -6,6 +6,7 @@ export default styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
+  font-size: 1.6rem;
   a:hover {
     text-decoration: none;
   }
