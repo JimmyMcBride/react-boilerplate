@@ -1,7 +1,7 @@
 import React from "react";
 
 import styled from "styled-components";
-import { Container, Row, Col, Button } from "../Global/styled";
+import { Wrapper, FlexBox, Button } from "../Global/styled";
 
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "../../store/actions/counter";
@@ -13,49 +13,29 @@ export default function ReduxCounter() {
 
   const count = useSelector(state => state.counter.count);
   return (
-    <Container>
-      <Row>
-        <Col>
-          <HomeLink to="/">Home</HomeLink>
-        </Col>
-      </Row>
+    <Wrapper>
+      <HomeLink to="/">Home</HomeLink>
 
-      <Row>
-        <Col>
-          <CountBtn onClick={() => dispatch(increment())}>++</CountBtn>
-        </Col>
-      </Row>
+      <CountBtn onClick={() => dispatch(increment())}>++</CountBtn>
 
-      <Row>
-        <Col>
-          <CodeCount>
-            Clicked <code>{count}</code> times
-          </CodeCount>
-        </Col>
-      </Row>
+      <CodeCount align="center" justify="space-between" width="12rem">
+        Clicked <code>{count}</code> times
+      </CodeCount>
 
-      <Row>
-        <Col>
-          <CountBtn onClick={() => dispatch(decrement())}>--</CountBtn>
-        </Col>
-      </Row>
-    </Container>
+      <CountBtn onClick={() => dispatch(decrement())}>--</CountBtn>
+    </Wrapper>
   );
 }
 
-const CodeCount = styled.div`
-  margin-top: 1rem;
-  margin-right: 1.4rem;
+const CodeCount = styled(FlexBox)`
+  margin: 1.4rem 1.4rem 1.4rem 0;
   code {
     font-size: 2.5rem;
   }
 `;
 
 const CountBtn = styled(Button)`
-  width: 3.2rem;
-  &:hover {
-    font-weight: bold;
-  }
+  // width: 3.2rem;
 `;
 
 const HomeLink = styled(Link)`
@@ -63,6 +43,4 @@ const HomeLink = styled(Link)`
   font-size: 3rem;
   padding: 0.3rem 1rem;
   border-radius: 0.25rem;
-  &:hover {
-  }
 `;
