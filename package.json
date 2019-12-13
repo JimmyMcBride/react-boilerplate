@@ -1,6 +1,6 @@
 {
   "name": "react-boilerplate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "dependencies": {
     "normalize.css": "^8.0.1",
@@ -35,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "a personalized create-react-app with router, axios, redux and more",
+  "main": "index.js",
+  "repository": "git@github.com:JimmyMcBride/react-boilerplate.git",
+  "author": "JimmyMcBride <mcbride967@gmail.com>",
+  "license": "MIT"
 }
